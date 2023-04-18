@@ -1,0 +1,66 @@
+.gpt3-blog .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.gpt3-blog .heading {
+  width: 100%;
+  text-align: left;
+}
+
+.gpt3-blog .heading h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.gpt3-blog .blog-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.gpt3-blog .blog-container .groupA {
+  flex: 0.75;
+}
+
+.gpt3-blog .blog-container .groupB {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .gpt3-blog .blog-container {
+    flex-direction: column-reverse;
+  }
+
+  .gpt3-blog .blog-container .groupA .gpt3-article {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gpt3-blog .blog-container .groupB {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gpt3-blog .blog-container .groupA .gpt3-article {
+    width: 100%;
+  }
+
+  .gpt3-blog .heading h1 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .gpt3-blog .heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
