@@ -14,7 +14,7 @@ const Menu = () => (
 )
 
 const Navbar = () => {
-  const [ toggleMenu, setToggleMenu ] = useState(true);
+  const [ toggleMenu, setToggleMenu ] = useState(false);
 
   return (
     <div className="gpt3-navbar">
